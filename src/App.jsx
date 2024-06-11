@@ -27,7 +27,7 @@ function App() {
   const [nodeType, setNodeType] = useState("");
 
   const handleNewNode = () => {
-    const location = Math.random() * 100;
+    const location = Math.random() * 10;
     setNodes((prevNodes) => [
       ...prevNodes,
       {
@@ -54,7 +54,7 @@ function App() {
         fitView
       >
         {/* <Background /> */}
-        <div className='updatenode__controls'>
+        <div className='updatenode__controls flex flex-col justify-center items-center'>
           <label>
             {" "}
             Node Name:
@@ -63,6 +63,7 @@ function App() {
               placeholder='Source/Destination Name'
               value={nodeName}
               onChange={(e) => setNodeName(e.target.value)}
+              className='p-4 m-3'
             />
           </label>
           <label>
@@ -72,10 +73,13 @@ function App() {
               placeholder='source/destination'
               value={nodeType}
               onChange={(e) => setNodeType(e.target.value)}
-              className='p-4 m-3'
+              className='p-[17px] m-3'
             />
           </label>
-          <button onClick={() => handleNewNode()} className='w-4 p-4'>
+          <button
+            onClick={() => handleNewNode()}
+            className=' w-32 p-1 bg-green-400 hover:bg-green-600 text-white'
+          >
             Add new Node
           </button>
         </div>
