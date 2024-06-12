@@ -37,5 +37,4 @@ export const initialNodes = [
 export const nodeTypes = {
   "source-node": SourceNode,
   "destination-node": DestinationNode,
-  // Add any of your custom nodes here!
 };

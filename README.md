@@ -1,8 +1,14 @@
-# React + Vite
+## React Flow App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [live url](https://react-flow-o9th.vercel.app/)
 
-Currently, two official plugins are available:
+## Functionalities
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Button to add 2 of nodes : source and destination
+- Connect Source and Destination by dragging the cursor
+- Draggable nodes
+- Break the connection of two nodes
+
+## Tech Stack
+
+- Vite + React + TailwindCSS + React Flow Library

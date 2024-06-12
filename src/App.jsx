@@ -30,7 +30,6 @@ function App() {
       };
       setEdges((prevEges) => addEdge(edge, prevEges));
     },
-    // setEdges((edges) => addEdge(connection, edges)),
     [setEdges]
   );
   const [nodeName, setNodeName] = useState("");
@@ -49,7 +48,6 @@ function App() {
         position: { x: -location, y: location },
       },
     ]);
-    // <CustomEdge />;
     setNodeName("");
     setNodeType("");
     setOpen(false);
@@ -69,7 +67,6 @@ function App() {
         maxZoom={4}
         fitView
       >
-        {/* <Background /> */}
         <button
           className='updatenode__btn w-32 p-1 bg-green-400 hover:bg-green-600 text-white'
           onClick={() => setOpen((open) => !open)}

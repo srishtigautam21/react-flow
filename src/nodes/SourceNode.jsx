@@ -4,7 +4,6 @@ import { IconArrowRight } from "../assets/react";
 
 export function SourceNode({ data }) {
   return (
-    // Add tailwind css classes here
     <div className='border-[1px] border-black rounded-sm bg-white flex h-16 p-1 w-max relative'>
       <div className=' bg-slate-400 h-[100%] flex items-center rounded-sm p-1'>
         <IconArrowRight />
@@ -16,8 +15,6 @@ export function SourceNode({ data }) {
       >
         Source
       </div>
-      {/* gives that dot which connects two nodes */}
-
       <Handle
         type='source'
         position={Position.Right}

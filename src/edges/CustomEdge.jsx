@@ -1,12 +1,11 @@
 import React from "react";
 import {
-  BezierEdge,
   EdgeLabelRenderer,
   getBezierPath,
   useReactFlow,
   BaseEdge,
 } from "reactflow";
-import { IconCross } from "../assets/react";
+
 export default function CustomEdge(EdgeProps) {
   const {
     id,
@@ -28,7 +27,6 @@ export default function CustomEdge(EdgeProps) {
     sourcePosition,
     targetPosition,
   });
-  console.log(EdgeProps, "cbkadj", edgePath, markerEnd);
 
   const onEdgeClick = () => {
     setEdges((edges) => edges.filter((e) => e.id !== id));
@@ -44,7 +42,6 @@ export default function CustomEdge(EdgeProps) {
             transform: `translate(-50%,-50%) translate(${labelX}px, ${labelY}px)`,
             fontSize: 12,
             color: "red",
-            // backgroundColor: "transparent",
             pointerEvents: "all",
           }}
           className='nodrag nopan'
@@ -59,5 +56,4 @@ export default function CustomEdge(EdgeProps) {
       </EdgeLabelRenderer>
     </>
   );
-  // nodrag nopan edgebutton
 }
