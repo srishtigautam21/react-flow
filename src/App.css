@@ -1,7 +1,13 @@
 .updatenode__controls {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 57px;
+  top: 57px;
   z-index: 4;
-  /* font-size: 12px; */
+  background-color: white;
+}
+.updatenode__btn {
+  position: absolute;
+  right: 57px;
+  top: 16px;
+  z-index: 4;
 }
